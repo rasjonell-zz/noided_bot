@@ -1,9 +1,7 @@
 use Mix.Config
 
 config :app,
-  bot_name: ""
+  bot_name: "noided_bot"
 
-config :nadia,
-  token: ""
-
-import_config "#{Mix.env}.exs"
+import_config("config.secrets.exs")
+import_config "#{Mix.env()}.exs"
